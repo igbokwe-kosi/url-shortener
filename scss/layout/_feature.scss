@@ -1,0 +1,46 @@
+.feature {
+  margin: 9.6rem 0;
+  display: grid;
+  place-items: center;
+  position: relative;
+
+  &__box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.8rem;
+
+    @include respond-sm {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__img-box {
+    padding: 2.4rem;
+    background-color: $color-secondary;
+    border-radius: 0.8rem;
+  }
+
+  &::after {
+    width: 80%;
+    content: '';
+    height: 1.2rem;
+    position: absolute;
+    top: 325px;
+    left: 50px;
+    background-color: $color-primary;
+    z-index: -1;
+
+    @include respond-sm {
+      visibility: hidden;
+    }
+  }
+
+  & .text {
+    width: 70%;
+    margin: 0 auto;
+
+    @include respond-sm {
+      width: 100%;
+    }
+  }
+}

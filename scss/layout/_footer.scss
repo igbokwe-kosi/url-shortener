@@ -1,0 +1,70 @@
+.footer {
+  background-color: $color-dark-gray-20;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 2fr repeat(4, 1fr);
+
+  @include respond-sm {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+
+    &__nav {
+      grid-row: 2;
+    }
+
+    &__social {
+      grid-column: 3/4;
+    }
+  }
+
+  @include respond-vsm {
+    grid-template-columns: 1fr;
+    gap: 3.2rem;
+    // grid-template-rows: repeat(5, 1fr);
+
+    &__nav {
+      grid-row: auto;
+    }
+
+    &__social {
+      grid-column: auto;
+    }
+  }
+
+  & img {
+    margin-top: 0.8rem;
+  }
+
+  &__link:hover,
+  &__link:active {
+    color: $color-primary;
+  }
+  &__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  &__social {
+    margin-top: 0.8rem;
+    display: flex;
+    gap: 1.8rem;
+    &-link {
+      color: transparent;
+
+      & path {
+        transition: all 0.3s;
+      }
+
+      &:hover path,
+      &:active path {
+        fill: $color-primary;
+      }
+    }
+    &__social-link:hover path,
+    &__social-link:active path {
+      fill: $color-primary;
+    }
+  }
+}

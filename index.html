@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="scss/main.css" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <script src="js/script.js" defer></script>
+
+    <title>Kosiso Igbokwe || Shortly URL shortening API</title>
+  </head>
+  <body>
+    <header class="header container">
+      <nav class="nav">
+        <img
+          src="images/logo.svg"
+          alt=""
+          class="nav__logo u-margin-right-auto"
+        />
+        <button class="btn--menu">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="ionicon"
+            viewBox="0 0 512 512"
+          >
+            <title></title>
+            <path
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-miterlimit="9"
+              stroke-width="32"
+              d="M80 160h352M80 256h352M80 352h352"
+            />
+          </svg>
+        </button>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#" class="nav__link">Features</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Pricing</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Resources</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="btn">Login</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="btn btn--cta">Sign Up</a>
+          </li>
+        </ul>
+      </nav>
+      <section class="hero">
+        <div class="hero__text-box">
+          <h1 class="heading-primary">More than just shorter links</h1>
+          <p class="text">
+            Build your brand’s recognition and get detailed insights on how your
+            links are performing.
+          </p>
+          <a href="#" class="btn btn--cta btn--lg u-margin-top-md">
+            Get Started
+          </a>
+        </div>
+        <img
+          src="images/illustration-working.svg"
+          alt="illustration of someone working"
+          class="hero__img"
+        />
+      </section>
+    </header>
+    <div class="container section-form" role="form">
+      <form class="form">
+        <input
+          type="text"
+          class="form__input"
+          placeholder="Shorten link here..."
+        />
+        <button class="form__button">Shorten it!</button>
+        <!-- <span class="error-message">error!!!</span> -->
+      </form>
+
+      <section class="result">
+        <ul class="result__list">
+          <li class="result__item">
+            <span class="result__link"
+              >https://www.freecodecamp.org/learn/</span
+            >
+            <span class="result__new-link">https://shrtco.de/B5oFoH</span>
+            <button class="result__btn">Copy</button>
+          </li>
+          <li class="result__item">
+            <span class="result__link">
+              https://www.freecodecamp.org/learn/
+            </span>
+            <span class="result__new-link">https://shrtco.de/B5oFoH</span>
+            <button class="result__btn">Copy</button>
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <section class="feature container">
+      <div class="feature__text-box">
+        <h2 class="heading-secondary u-center-text">Advanced Statistics</h2>
+        <p class="text u-center-text u-margin-bottom-lg">
+          Track how your links are performing across the web with our advanced
+          statistics dashboard.
+        </p>
+      </div>
+      <div class="feature__box">
+        <figcaption class="feature__img-box">
+          <img
+            class="feature__icon"
+            src="./images/icon-brand-recognition.svg"
+            alt="brand recognition logo"
+          />
+          <figure class="feature__text">
+            Boost your brand recognition with each click. Generic links don’t
+            mean a thing. Branded links help instil confidence in your content.
+          </figure>
+        </figcaption>
+        <figcaption class="feature__img-box">
+          <img
+            class="feature__icon"
+            src="./images/icon-detailed-records.svg"
+            alt="brand recognition logo"
+          />
+          <figure class="feature__text">
+            Gain insights into who is clicking your links. Knowing when and
+            where people engage with your content helps inform better decisions.
+          </figure>
+        </figcaption>
+        <figcaption class="feature__img-box">
+          <img
+            class="feature__icon"
+            src="./images/icon-fully-customizable.svg"
+            alt="brand recognition logo"
+          />
+          <figure class="feature__text">
+            Improve brand awareness and content discoverability through
+            customizable links, supercharging audience engagement.
+          </figure>
+        </figcaption>
+      </div>
+    </section>
+
+    <section class="cta container">
+      <h2 class="heading-secondary u-color-white">Boost your links today</h2>
+      <a href="#" class="btn btn--cta btn--lg">Get Started!</a>
+    </section>
+
+    <footer class="footer container">
+      <img src="./images/logo-white.svg" alt="logo" />
+
+      <nav class="footer__nav footer__nav--1">
+        <h3 class="heading-tertiary u-margin-bottom-sm">Features</h3>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="" class="btn footer__link">Link Shortening </a>
+          </li>
+          <li class="footer__item">
+            <a href="" class="btn footer__link">Branded Links </a>
+          </li>
+          <li class="footer__item">
+            <a href="" class="btn footer__link">Analytics </a>
+          </li>
+        </ul>
+      </nav>
+
+      <nav class="footer__nav footer__nav--2">
+        <h3 class="heading-tertiary u-margin-bottom-sm">Resources</h3>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="" class="btn footer__link">Blog </a>
+          </li>
+          <li class="footer__item">
+            <a href="" class="btn footer__link">Developers </a>
+          </li>
+          <li class="footer__item">
+            <a href="" class="btn footer__link">Support </a>
+          </li>
+        </ul>
+      </nav>
+
+      <nav class="footer__nav footer__nav--3">
+        <h3 class="heading-tertiary u-margin-bottom-sm">Company</h3>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="" class="btn footer__link">About </a>
+          </li>
+          <li class="footer__item">
+            <a href="" class="btn footer__link">Our Team </a>
+          </li>
+          <li class="footer__item">
+            <a href="" class="btn footer__link">Contact </a>
+          </li>
+        </ul>
+      </nav>
+
+      <nav class="footer__social">
+        <a href="#" class="footer__social-link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20">
+            <path
+              fill="#FFF"
+              d="M24 2.557a9.83 9.83 0 01-2.828.775A4.932 4.932 0 0023.337.608a9.864 9.864 0 01-3.127 1.195A4.916 4.916 0 0016.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 011.671 1.149a4.93 4.93 0 001.523 6.574 4.903 4.903 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084 4.928 4.928 0 004.6 3.419A9.9 9.9 0 010 17.54a13.94 13.94 0 007.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0024 2.557z"
+            />
+          </svg>
+        </a>
+        <a href="#" class="footer__social-link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+            <path
+              fill="#FFF"
+              d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"
+            />
+          </svg>
+        </a>
+        <a href="#" class="footer__social-link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+            <path
+              fill="#FFF"
+              d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 01.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"
+            />
+          </svg>
+        </a>
+      </nav>
+    </footer>
+  </body>
+</html>

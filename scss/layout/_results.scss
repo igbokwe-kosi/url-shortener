@@ -1,0 +1,41 @@
+.result {
+  &__list {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 1.2rem;
+    list-style: none;
+  }
+  &__item {
+    align-items: center;
+    justify-content: center;
+    background-color: $color-white;
+    display: flex;
+    gap: 2.4rem;
+    border-radius: 0.8rem;
+    padding: 1.2rem 2.4rem;
+    @include respond-sm {
+      flex-direction: column;
+      gap: 0;
+      text-align: center;
+    }
+    @include respond-vsm {
+      align-items: stretch;
+    }
+  }
+  &__link {
+    margin-right: auto;
+    @include respond-sm {
+      margin-right: 0;
+    }
+  }
+
+  &__new-link {
+    color: $color-primary;
+  }
+
+  &__btn {
+    @include btn-style(0.8rem);
+    font-size: inherit;
+  }
+}

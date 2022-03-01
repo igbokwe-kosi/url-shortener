@@ -1,0 +1,50 @@
+.section-form {
+  margin-top: -12rem;
+}
+.form {
+  position: relative;
+  background: url(../../images/bg-shorten-desktop.svg) $color-dark-gray-10;
+  height: 13rem;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+  /* display: inline-flex; */
+  /* display: flex;
+  gap: 1.2rem;
+  align-items: center;
+  justify-content: center; */
+  display: grid;
+  padding: 0 3.2rem;
+  grid-template-columns: 1fr auto;
+
+  @include respond-vsm {
+    display: flex;
+    height: 16rem;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+  }
+  place-items: center;
+  gap: 1.2rem;
+
+  &__input {
+    width: 100%;
+    // height: 4rem;
+    border: none;
+    border-radius: 1rem;
+    font-size: 1.6rem;
+    padding: 1.6rem;
+    font-family: inherit;
+
+    &:placeholder-shown.error {
+      color: red;
+      outline: 2px solid red;
+    }
+  }
+
+  &__button {
+    @include btn-style(0.8rem);
+    padding: 1.6rem 2.4rem;
+    font-weight: 700;
+    font-size: inherit;
+  }
+}

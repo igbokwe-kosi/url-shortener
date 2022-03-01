@@ -1,0 +1,31 @@
+.header {
+  background-color: $color-white;
+  position: relative;
+  overflow: hidden;
+}
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 9.6rem 0;
+  gap: 2.4rem;
+
+  @include respond-sm {
+    flex-direction: column-reverse;
+    &__text-box {
+      width: 100%;
+    }
+
+    &__img {
+      width: 100%;
+    }
+  }
+
+  &__text-box {
+    width: 100%;
+  }
+
+  &__img {
+    width: 100%;
+  }
+}

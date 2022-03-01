@@ -1,0 +1,11 @@
+.cta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../../images/bg-shorten-desktop.svg);
+  background-color: $color-secondary;
+  gap: 1.8rem;
+}

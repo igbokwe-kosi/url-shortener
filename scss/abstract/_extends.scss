@@ -1,0 +1,10 @@
+%link-typo {
+  text-decoration: none;
+  color: $color-light-gray-20;
+  transition: all 0.3s;
+
+  &:hover,
+  &:active {
+    color: $color-dark-gray-10;
+  }
+}

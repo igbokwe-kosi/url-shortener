@@ -1,0 +1,8 @@
+node_modules
+design
+*.txt
+*.sketch
+style-guide.md
+*.xd
+*.fig
+

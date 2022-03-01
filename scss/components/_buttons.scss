@@ -1,0 +1,47 @@
+.btn {
+  @extend %link-typo;
+  display: inline-block;
+
+  &--cta {
+    @include btn-style(2.4rem);
+  }
+
+  &--lg {
+    padding: 1.6rem 3.2rem;
+    border-radius: 3.2rem;
+  }
+
+  &--copied {
+    background-color: $color-secondary;
+    &:hover {
+      background-color: $color-secondary-light;
+    }
+  }
+
+  &--menu {
+    display: flex;
+    transition: all 0.3s;
+    align-items: center;
+    justify-content: center;
+    padding: 1.2rem;
+    width: 4.8rem;
+    height: 4.8rem;
+    color: $color-white;
+    background-color: #000;
+    border: none;
+    font-size: 1px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 3;
+
+    pointer-events: none;
+    visibility: hidden;
+    opacity: 0;
+
+    @include respond-sm {
+      pointer-events: all;
+      visibility: visible;
+      opacity: 100%;
+    }
+  }
+}
